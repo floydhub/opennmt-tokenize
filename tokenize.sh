@@ -61,5 +61,4 @@ echo "SEP_ANNONATE = ${SEP_ANNONATE}"
 echo "CASE_FEATURE = ${CASE_FEATURE}"
 echo "BPE_MODEL = ${BPE_MODEL}"
 
-cd ~/opennmt
-th tools/tokenize.lua ${MODE} ${SEP_ANNONATE} ${CASE_FEATURE} ${BPE_MODEL} < ${INPUT} > ${OUTPUT}
+th /opennmt/tools/tokenize.lua ${MODE} ${SEP_ANNONATE} ${CASE_FEATURE} ${BPE_MODEL} < ${INPUT} > ${OUTPUT}
